@@ -29,6 +29,8 @@ export const Users = () => {
 
     <div className="container">
       <h1>Users</h1>
+      <h1><Link to="/">Main</Link></h1>
+      <h1><Link to="/accounts">accounts</Link></h1> 
       <table>
         <thead>
           <tr>

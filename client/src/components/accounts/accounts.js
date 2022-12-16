@@ -14,17 +14,23 @@ export const Accounts = () => {
   }, []);
 
   return (
-
     <div className="container">
       <h1>accounts</h1>
+
+      <h1>
+        <Link to="/">Main</Link>
+      </h1>
+      <h1>
+        <Link to="/users">users</Link>
+      </h1>
       <table>
         <thead>
           <tr>
             <th scope="col">Id</th>
             <th scope="col">credit</th>
             <th scope="col">usersIds</th>
-            <th scope="col">Total Cash</th>     
-            <th scope="col"> button </th>       
+            <th scope="col">Total Cash</th>
+            <th scope="col"> button </th>
           </tr>
         </thead>
         <tbody>
@@ -32,9 +38,11 @@ export const Accounts = () => {
             <tr key={account.id}>
               <td>{account._id}</td>
               <td>{account.credit}</td>
-              <td>{account.usersIds.map((usr)=>{
-                return(<p>{usr}</p>)
-              })}</td>
+              <td>
+                {account.usersIds.map((usr) => {
+                  return <p>{usr}</p>;
+                })}
+              </td>
               <td>{account.cash}</td>
               <td>
                 <Link to={`/accounts/${account._id}`}>Details</Link>
@@ -44,9 +52,5 @@ export const Accounts = () => {
         </tbody>
       </table>
     </div>
-
-
-
-
   );
 };

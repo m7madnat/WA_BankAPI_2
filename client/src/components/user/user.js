@@ -18,7 +18,7 @@ export const User = (props) => {
   return (
     <div className="container">
       <h1>User</h1>
-      <h2> <Link to={`/`}> back to users</Link></h2>
+      <h2> <Link to={`/users`}> back to users</Link></h2>
       <table>
         <thead>
           <tr>

@@ -7,9 +7,9 @@ export const createAccount = async (cash = 0, credit = 0, usersIds = []) => {
 };
 
 export const getTotalCash = async (accountIds) => {
-  const filteredAccounts = await Account.find({ _id: { $in: accountIds } });
-  const totalCash = filteredAccounts.reduce((accum, account) => {
-    return accum + account.cash;
+  const accounts = await Account.find({ _id: { $in: accountIds } });
+  const totalCash = accounts.reduce((acc, account) => {
+    return acc + account.cash;
   }, 0);
   return totalCash;
 };
