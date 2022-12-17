@@ -13,7 +13,7 @@ export function Api(options = {}) {
   const { headers = {} } = options;
 
   const url =
-    process.env.NODE_ENV === "production" ? "/" : "http://localhost:5001/api";
+    process.env.NODE_ENV === "production" ? "/api" : "http://localhost:5001/api";
 
   return axios.create({
     baseURL: url,
