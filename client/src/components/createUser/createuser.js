@@ -27,6 +27,7 @@ export const CreateUser = () => {
   return (
     <div>
       <h1>Create User</h1>
+      <h2>You can create user without link the user with any account ids ,Just leave the input blank</h2>
       <form>
         <label>Name</label>
         <input
@@ -35,11 +36,11 @@ export const CreateUser = () => {
           onChange={(e) => setName(e.target.value)}
         />
         <label>Account Ids</label>
-
         <input
           type="text"
           value={accountIds}
           onChange={(e) => setAccountIds(e.target.value)}
+          placeholder="Separate by comma"
         />
         <button onClick={addUser}>Create</button>
         <h1>
