@@ -25,7 +25,7 @@ export const Account = (props) => {
       <h1>Account</h1>
       <h2>
         {" "}
-        <Link to={`/`}> back to Accounts</Link>
+        <Link to={`/accounts`}> back to Accounts</Link>
       </h2>
       <table>
         <thead>
