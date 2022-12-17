@@ -48,7 +48,11 @@ export const Account = (props) => {
       <div>
         <h1>Update Credit</h1>
         <form>
-          <input type="text" onChange={(e) => setCredit(e.target.value)} />
+          <input
+            type="text"
+            placeholder="amount"
+            onChange={(e) => setCredit(e.target.value)}
+          />
           <button
             onClick={(e) => {
               e.preventDefault();
@@ -66,7 +70,11 @@ export const Account = (props) => {
       <div>
         <h1>Deposit</h1>
         <form>
-          <input type="text" onChange={(e) => setDeposit(e.target.value)} />
+          <input
+            type="text"
+            placeholder="amount"
+            onChange={(e) => setDeposit(e.target.value)}
+          />
           <button
             onClick={(e) => {
               e.preventDefault();
@@ -84,7 +92,11 @@ export const Account = (props) => {
       <div>
         <h1>Withdraw</h1>
         <form>
-          <input type="text" onChange={(e) => setWithdraw(e.target.value)} />
+          <input
+            type="text"
+            placeholder="amount"
+            onChange={(e) => setWithdraw(e.target.value)}
+          />
           <button
             onClick={(e) => {
               e.preventDefault();
@@ -102,8 +114,16 @@ export const Account = (props) => {
       <div>
         <h1>Transfer</h1>
         <form>
-          <input type="text" onChange={(e) => setTransfer(e.target.value)} />
-          <input type="text" onChange={(e) => setTo(e.target.value)} />
+          <input
+            type="text"
+            placeholder="amount"
+            onChange={(e) => setTransfer(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="to"
+            onChange={(e) => setTo(e.target.value)}
+          />
 
           <button
             onClick={(e) => {
